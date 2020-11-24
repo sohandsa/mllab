@@ -19,5 +19,3 @@ inputlayer_neurons = 2
 hiddenlayer_neurons = 3
 output_neurons = 1
 
-#comment to test
-#comment 2
