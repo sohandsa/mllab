@@ -13,7 +13,7 @@ def sigmoid(x):
 def derivatives_sigmoid(x):
     return x * (1 - x)
 
-epoch = 7000
+epoch = 10000
 lr = 0.1
 
 inputlayer_neurons = 2
@@ -42,6 +42,7 @@ for i in range(epoch):
     wout += hlayer_act.T.dot(d_output) * lr
     wh += X.T.dot(d_hiddenlayer) * lr
 
+print("epoch = {}\n".format(epoch))
 print("Input : \n", str(X))
 print("Actual Output: \n", str(y))
 print("Predicted Output: \n", output)
